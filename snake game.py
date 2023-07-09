@@ -90,14 +90,14 @@ def program(count2,h_count,width,height):
 
         # Clear the screen
         WIN.fill(green)
-        image2 = pygame.image.load("C:/Users/ayush/Downloads/gamebg.png")
+        image2 = pygame.image.load("C:/Users/User_1/Downloads/gamebg.png") #change background location
         image2=pygame.transform.scale(image2,(width,height))
         WIN.blit(image2, (0,0))
 
         # Draw the snake and apple
         pygame.draw.rect(WIN, BLUE, (snake_x, snake_y, snake_size, snake_size))
         pygame.draw.rect(WIN,grey, (width, 0, 210, height))
-        image = pygame.image.load('C:/Users/ayush/Downloads/apple.png')
+        image = pygame.image.load('C:/Users/ayush/Downloads/apple.png')# change apple image location
         image=pygame.transform.scale(image,(20,21))
         WIN.blit(image, (apple_x,apple_y))
         '''
