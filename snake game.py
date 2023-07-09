@@ -97,32 +97,10 @@ def program(count2,h_count,width,height):
         # Draw the snake and apple
         pygame.draw.rect(WIN, BLUE, (snake_x, snake_y, snake_size, snake_size))
         pygame.draw.rect(WIN,grey, (width, 0, 210, height))
-        image = pygame.image.load('C:/Users/ayush/Downloads/apple.png')# change apple image location
+        image = pygame.image.load('C:/Users/User_1/Downloads/apple.png')# change apple image location
         image=pygame.transform.scale(image,(20,21))
         WIN.blit(image, (apple_x,apple_y))
-        '''
-        if sn==1:
-            image_s_up = pygame.image.load('C:/Users/ayush/OneDrive/Documents/lib/snakeup.png')
-            image_s_up = pygame.transform.scale(image_s_up,(20,21))
-            WIN.blit(image_s_up, (snake_x,snake_y))
-        elif sn==2:
-            image_s_down = pygame.image.load('C:/Users/ayush/OneDrive/Documents/lib/snakedown.png')
-            image_s_down = pygame.transform.scale(image_s_down,(20,21))
-            WIN.blit(image_s_down, (snake_x,snake_y))
-        elif sn==3:
-            image_s_left = pygame.image.load('C:/Users/ayush/OneDrive/Documents/lib/snakeleft.png')
-            image_s_left = pygame.transform.scale(image_s_left,(20,21))
-            WIN.blit(image_s_left, (snake_x,snake_y))
-        elif sn==4:
-            image_s_right = pygame.image.load('C:/Users/ayush/OneDrive/Documents/lib/snakeright.png')
-            image_s_right = pygame.transform.scale(image_s_right,(20,21))
-            WIN.blit(image_s_right, (snake_x,snake_y))
-        elif sn==0:
-            image_s_left = pygame.image.load('C:/Users/ayush/OneDrive/Documents/lib/snakeleft.png')
-            image_s_left = pygame.transform.scale(image_s_left,(20,21))
-            WIN.blit(image_s_left, (snake_x,snake_y))
-
-        '''
+        
         font = pygame.font.Font(None, 36)
 
         # Render the text
