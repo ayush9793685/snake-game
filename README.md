@@ -1,1 +1,1 @@
-# snake-game-1
+# snake-game
